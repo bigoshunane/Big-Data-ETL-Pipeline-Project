@@ -90,7 +90,7 @@ Open the notebook [amazon_music_reviews.ipynb](https://github.com/bigoshunane/Bi
   
 With the RDS instance now created, the user should connect pgAdmin4 to its endpoint for local access. This is accomplished as follows:
   
-1. Navigate to the created RDS instance on the AWS Management Console.
+1. Navigate to the created RDS instance on the [AWS Management Console](https://aws.amazon.com/console/).
 2. Copy the "Endpoint" shown under "Connectivity & security"
 3. Open and log into pgAdmin4.
 4. Select "Add New Server" and set the following:
