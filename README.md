@@ -26,7 +26,7 @@ Analyze whether reviews from Amazon's Vine program are trustworthy. Moreover, ho
   - pgAdmin
   - [Google colaboratory](https://colab.research.google.com/notebooks/welcome.ipynb)
   
-# Results
+## Results
 Running AWS RDS ETL Pipeline Amazon_Music_Reviews.ipynb to populate the four tables in our PostgreSQL database as shown in the following images:
 
 - review_id_table
