@@ -63,7 +63,7 @@ This would then determine if the mean rating for Vine reviews is significantly g
 
 # Use case
 ## `amazon_music_reviews.ipynb`
-Open the notebook Amazon_Reviews_ETL.ipynb using "File > Open notebook". Prior to running all cells, the user should create an AWS RDS instance as follows:
+Open the notebook [amazon_music_reviews.ipynb](https://github.com/bigoshunane/Big-data-challenge-HM-18/blob/main/level_1/amazon_music_reviews.ipynb) using "File > Open notebook". Prior to running all cells, the user should create an AWS RDS instance as follows:
 
 1. Navigate to the AWS Management Console and sign in.
 2. Search for "RDS" (Managed Relational Database Service) and select the first result.
