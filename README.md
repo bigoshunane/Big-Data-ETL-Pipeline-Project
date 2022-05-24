@@ -30,16 +30,16 @@ Analyze whether reviews from Amazon's Vine program are trustworthy. Moreover, ho
 Running AWS RDS ETL Pipeline Amazon_Music_Reviews.ipynb to populate the four tables in our PostgreSQL database as shown in the following images:
 
 - review_id_table
-- ![review_id_table](https://user-images.githubusercontent.com/84547558/169960910-24bb0004-5e29-47a2-87d5-46c2739cf2ba.png)
+![review_id_table](https://user-images.githubusercontent.com/84547558/169960910-24bb0004-5e29-47a2-87d5-46c2739cf2ba.png)
 
 - products
-- ![products](https://user-images.githubusercontent.com/84547558/169960987-e22616b7-0b87-475b-aa47-4a344ed4e030.png)
+ ![products](https://user-images.githubusercontent.com/84547558/169960987-e22616b7-0b87-475b-aa47-4a344ed4e030.png)
 
 - customers
-- ![customers](https://user-images.githubusercontent.com/84547558/169961010-fa894999-101e-4770-916a-ecdcffa16254.png)
+![customers](https://user-images.githubusercontent.com/84547558/169961010-fa894999-101e-4770-916a-ecdcffa16254.png)
 
 - vine_table
-- ![vine_table](https://user-images.githubusercontent.com/84547558/169961024-b131d064-5fb9-4b6b-b890-93565597ba3e.png)
+![vine_table](https://user-images.githubusercontent.com/84547558/169961024-b131d064-5fb9-4b6b-b890-93565597ba3e.png)
 
 
 Analysis to compare the number and ratio of 5 star reviews between those included in the Vine program (paid) and those not (unpaid). Before making this comparison, then filtered the Vine data set to only contain rows with the following conditions:
@@ -101,7 +101,7 @@ With the RDS instance now created, the user should connect pgAdmin4 to its endpo
   
 5. Choose "Save" to establish the connection.
 6. Establish the necessary database structure by using the "Query Tool" for the instantiated database.
-7. Open and run the queries contained in [music_schema.sql]()
+7. Open and run the queries contained in [music_schema.sql](https://github.com/bigoshunane/Big-data-challenge-HM-18/blob/main/Resources/music_schema.sql)
   
 With the RDS instance created, connection to pgAdmin4 established, and database schema defined, the user can now establish connection in amazon_music_revies.ipynb:
   
