@@ -9,8 +9,8 @@ There are two levels to this homework assignment. The second level is optional b
 
 ## Project objective
 
-Create DataFrames to match production-ready tables from two big Amazon customer review datasets.
-Analyze whether reviews from Amazon's Vine program are trustworthy. Moreover, how to deploy google Colaboratory Notebook files for ETL pipeline of Amazon music reviews to AWS PostgreSQL database and analysis of the ratio of five star reviews as it relates to participation in the Vine program.
+Developing google Colaboratory Notebook files for ETL pipeline of Amazon music reviews and connection to AWS PostgreSQL database and analysis of the ratio of five star reviews as it relates to participation in the Vine program.
+
 
 ## Resources
 
