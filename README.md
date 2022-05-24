@@ -13,6 +13,6 @@ Analyze whether reviews from Amazon's Vine program are trustworthy.
 Google Colaboratory Notebook files for ETL pipeline of Amazon music reviews to AWS PostgreSQL database and analysis of the ratio of five star reviews as it relates to participation in the Vine program.
 
 ## Resources
-.  Data Source
--  [link](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt)
--  [Music data](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Music_v1_00.tsv.gz)
+-  Data Source
+.  [link](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt)
+.  [Music data](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Music_v1_00.tsv.gz)
