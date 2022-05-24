@@ -130,3 +130,7 @@ After completion of this AWS RDS pipeline, the user should shut down its instanc
   
 vine_review_analysis.ipynb does not require a user-defined AWS RDS instance and therefore one can simply open this notebook in Google Colaboratory and run all cells. This will include reading the Amazon review data set from an AWS S3 instance into a Spark DataFrame. Subsequent cells then include filtering this DataFrame and parsing the result to determine the number and percent of five star reviews among the Vine program participants and non-participants.
   
+## References
+Amazon customer Reviews Dataset. (n.d.). Retrieved April 08, 2021, from: https://s3.amazonaws.com/amazon-reviews-pds/readme.html
+
+© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
