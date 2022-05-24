@@ -93,7 +93,7 @@ With the RDS instance now created, the user should connect pgAdmin4 to its endpo
   
 5. Choose "Save" to establish the connection.
 6. Establish the necessary database structure by using the "Query Tool" for the instantiated database.
-7. Open and run the queries contained in [schema.sql]()
+7. Open and run the queries contained in [music_schema.sql]()
   
 With the RDS instance created, connection to pgAdmin4 established, and database schema defined, the user can now establish connection in amazon_music_revies.ipynb:
   
@@ -105,11 +105,19 @@ With the RDS instance created, connection to pgAdmin4 established, and database 
   
 2. Return to Google Colaboratory, and in the first cell under "Connect to the AWS RDS instance and write each DataFrame to its table", replace this <connection_string> along with the <Database Name>, <Username>, and <Password> that are currently shown with those created in previous steps:
   
-mode = "append"
-jdbc_url = "jdbc:postgresql://<connection_string>:5432/<Database Name>"
-config = {"user": "<Username>", 
-          "password": "<Password>", 
-          "driver": "org.postgresql.Driver"}
+![ff](https://user-images.githubusercontent.com/84547558/169959049-e389af0e-4753-499b-9a9b-10a79a764fe7.png)
   
+3. One can then run all cells in Amazon_Reviews_ETL.ipynb, return to pgAdmin4, and query the recently created tables to confirm the data loading into  the AWS RDS instance was successful. 
   
+After completion of this AWS RDS pipeline, the user should shut down its instance to ensure they do not incur unexpected charges. This is accomplished as follows:
+
+1. Navigate to the RDS Service page from the AWS Management Console.
+2. Select "DB Instances".
+3. Select the checkbox for the recently created database.
+4. Under the "Actions" dropdown menu, select "Delete" and confirm deletion.
+- There is no need to "Create final snapshot" or "Retain automated backups" and so these option should not be selected.
+  
+  ## `vine_review_analysis.ipynb`
+  
+vine_review_analysis.ipynb does not require a user-defined AWS RDS instance and therefore one can simply open this notebook in Google Colaboratory and run all cells. This will include reading the Amazon review data set from an AWS S3 instance into a Spark DataFrame. Subsequent cells then include filtering this DataFrame and parsing the result to determine the number and percent of five star reviews among the Vine program participants and non-participants.
   
