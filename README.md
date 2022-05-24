@@ -29,7 +29,16 @@ Analyze whether reviews from Amazon's Vine program are trustworthy. Moreover, ho
 # Results
 Running AWS RDS ETL Pipeline Amazon_Music_Reviews.ipynb to populate the four tables in our PostgreSQL database as shown in the following images:
 
-- review_id_table
-- products
-- customers
-- vine_table
+- [review_id_table]()
+- [products]()
+- [customers]()
+- [vine_table]()
+
+Analysis to compare the number and ratio of 5 star reviews between those included in the Vine program (paid) and those not (unpaid). Before making this comparison, then filtered the Vine data set to only contain rows with the following conditions:
+- At least 20 total votes
+- Majority of votes considered helpful,i.e helpful_votes / total_votes >= 0.5
+
+The resulting DataFrame splited in two, with one DataFrame containing paid reviews, i.e vine == "Y", and the other containing unpaid reviews, i.e vine == "N". Then .groupby("star_rating").agg(count("star_rating")) were used to obtain the count of each rating level for each DataFrame, as shown in Rating Counts Summary. The summarry of the information obtained in DataFrame shown in table below:
+![table](https://user-images.githubusercontent.com/84547558/169955450-519e7fce-8940-4046-a8ad-c520dae6fb7a.png)
+
+Analysis to compare the number and ratio of 5 star reviews between those included in the Vine program (paid) and those not (unpaid). Before making this comparison, then filtered the Vine data set to only contain rows with the following conditions:
