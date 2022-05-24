@@ -41,4 +41,19 @@ Analysis to compare the number and ratio of 5 star reviews between those include
 The resulting DataFrame splited in two, with one DataFrame containing paid reviews, i.e vine == "Y", and the other containing unpaid reviews, i.e vine == "N". Then .groupby("star_rating").agg(count("star_rating")) were used to obtain the count of each rating level for each DataFrame, as shown in Rating Counts Summary. The summarry of the information obtained in DataFrame shown in table below:
 ![table](https://user-images.githubusercontent.com/84547558/169955450-519e7fce-8940-4046-a8ad-c520dae6fb7a.png)
 
-Analysis to compare the number and ratio of 5 star reviews between those included in the Vine program (paid) and those not (unpaid). Before making this comparison, then filtered the Vine data set to only contain rows with the following conditions:
+## Summary
+Comparing the number and ratio of 5 star reviews between those included and not included in the Vine program, it appears there is no clear positivity bias for reviews in the program (0.0% Vine 5 star review while 63.76% Non-Vine 5 star reviews). However, the much larger number of non-Vine reviews relative to Vine reviews (105979 versus 7) likely indicates that this conclusion is not statistically significant. To obtain a better understanding, increased vine review data is necessary. From here, one could formulate a two-sample T-test with the following hypotheses:
+
+H_0 : The mean rating (in number of stars) is the same between Vine and non-Vine
+      reviews. i.e:
+      mean_rating_vine = mean_rating_nonvine
+H_a : The mean rating (in number of stars) for Vine reviews is greater than that
+      of non-Vine reviews, i.e there is positivity bias, and:
+      mean_rating_vine > mean_rating_nonvine
+      
+This would then determine if the mean rating for Vine reviews is significantly greater than the mean rating for non-Vine reviews.
+
+# Use case
+
+
+
