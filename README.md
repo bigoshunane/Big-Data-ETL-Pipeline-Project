@@ -14,6 +14,6 @@ Google Colaboratory Notebook files for ETL pipeline of Amazon music reviews to A
 
 ## Resources
 
--  Data Source
++  Data Source
   -  [link](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt)
   -   [Music data](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Music_v1_00.tsv.gz)
