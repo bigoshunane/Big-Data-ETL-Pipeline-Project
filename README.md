@@ -66,7 +66,7 @@ The majority of the code for this analysis is contained in the two Jupyter Noteb
 ## `amazon_music_reviews.ipynb`
 Open the notebook [amazon_music_reviews.ipynb](https://github.com/bigoshunane/Big-data-challenge-HM-18/blob/main/level_1/amazon_music_reviews.ipynb) using "File > Open notebook". Prior to running all cells, the user should create an AWS RDS instance as follows:
 
-1. Navigate to the AWS Management Console and sign in.
+1. Navigate to the [AWS Management Console](https://aws.amazon.com/console/) and sign in.
 2. Search for "RDS" (Managed Relational Database Service) and select the first result.
 3. On the resulting page, select "Create database" and change the following from the default options:
 - "Engine options > Engine type": "PostgreSQL"
@@ -90,7 +90,7 @@ Open the notebook [amazon_music_reviews.ipynb](https://github.com/bigoshunane/Bi
   
 With the RDS instance now created, the user should connect pgAdmin4 to its endpoint for local access. This is accomplished as follows:
   
-1. Navigate to the created RDS instance on the [AWS Management Console](https://aws.amazon.com/console/).
+1. Navigate to the created RDS instance on the AWS Management Console.
 2. Copy the "Endpoint" shown under "Connectivity & security"
 3. Open and log into pgAdmin4.
 4. Select "Add New Server" and set the following:
