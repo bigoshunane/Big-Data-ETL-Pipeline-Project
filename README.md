@@ -63,6 +63,7 @@ This would then determine if the mean rating for Vine reviews is significantly g
 
 ## Use case
 The majority of the code for this analysis is contained in the two Jupyter Notebook files [amazon_music_reviews.ipynb](https://github.com/bigoshunane/Big-data-challenge-HM-18/blob/main/level_1/amazon_music_reviews.ipynb) and [vine_reviews_analysis.ipynb](https://github.com/bigoshunane/Big-data-challenge-HM-18/blob/main/level_2/vine_reviews_analysis.ipynb). Both; however, require the Spark dependency and are thus best run using `Google Colaboratory.`
+
 ## `amazon_music_reviews.ipynb`
 Open the notebook [amazon_music_reviews.ipynb](https://github.com/bigoshunane/Big-data-challenge-HM-18/blob/main/level_1/amazon_music_reviews.ipynb) using "File > Open notebook". Prior to running all cells, the user should create an AWS RDS instance as follows:
 
