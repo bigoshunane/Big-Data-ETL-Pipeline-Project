@@ -6,7 +6,6 @@ In this assignment you will put your ETL skills to the test. Many of Amazon's sh
 There are two levels to this homework assignment. The second level is optional but highly recommended.
 
 
-
 ## Project objective
 
 Developing google Colaboratory Notebook files for ETL pipeline of Amazon music reviews and connection to AWS PostgreSQL database and analysis of the ratio of five star reviews as it relates to participation in the Vine program.
