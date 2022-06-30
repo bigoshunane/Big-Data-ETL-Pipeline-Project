@@ -1,4 +1,4 @@
-# Amazon Vine Analysis 
+# Amazon Vine Analysis: ETL pipeline 
 
 ## Background
 
